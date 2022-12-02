@@ -1,0 +1,97 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title> Source</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+       ` <link href="/static/styles.css" rel="stylesheet" />
+       
+    </head>
+    <body id="page-top">
+        <style>
+            body {
+              background-image: url('/static/images/bg10.jpeg');
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: cover;
+            }
+            </style>
+
+        <!-- Contact Section-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Source</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Contact Section Form-->
+                <style>
+                    * {
+                box-sizing: border-box;
+                }
+
+                .column {
+                  float: left;
+                  width: 50%;
+                  padding: 5px;
+                }
+
+                /* Clearfix (clear floats) */
+                .row::after {
+                  content: "";
+                  clear: both;
+                  display: table;
+                }
+                </style>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-7">
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- * * SB Forms Contact Form * *-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- This form is pre-integrated with SB Forms.-->
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!-->
+                            <form action="{% url 'thank' %}" method="post">
+                                {% csrf_token %}
+                                <div class="row">
+
+                                    <div class="column">
+                                
+                                        <input type="image" name = "HSi"  id="bt1" alt = "Submit" class="img-fluid rounded mb-5" src="/static/images/internal.jpeg" width="900" height="900" >
+                                
+                                    </div>
+                                
+                                    <div class="column">
+                                
+                                        <input type="image"  name = "HSe" value = "HS2" class="img-fluid rounded mb-5" src="/static/images/external.jpeg" alt="..."  width="900" height="900" />
+                                    
+                                    </div>
+                                </div>   
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright &copy; Your Website 2022</small></div>
+        </div>
+    </body>
+</html>

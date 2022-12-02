@@ -1,0 +1,116 @@
+
+        <!-- Portfolio Modals-->
+        <!-- Portfolio Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Happy</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <style>
+                                      body {
+                                        background-image: url('/static/images/bg15.jpeg');
+                                        background-repeat: no-repeat;
+                                        background-attachment: fixed;
+                                        background-size: cover;
+                                      }
+                                      </style>
+                                    
+                                    <script>
+                                        $(this).attr("value");
+                                        $(this).data('value');
+                                    </script>                                   
+                                    <style>
+                                        * {
+                                    box-sizing: border-box;
+                                    }
+
+                                    .column {
+                                      float: left;
+                                      width: 33.33%;
+                                      padding: 5px;
+                                    }
+
+                                    /* Clearfix (clear floats) */
+                                    .row::after {
+                                      content: "";
+                                      clear: both;
+                                      display: table;
+                                    }
+                                    </style>
+
+                                    <form action="{% url 'source' %}" method="post">
+                                        {% csrf_token %}
+                                      <div class="row">
+                                      <div class="column">
+                                        
+                                        <input type="image" name = "HS1"  id="bt1" alt = "Submit" class="img-fluid rounded mb-5" src="/static/images/emojis(png)/H_W_1.png" width="200" height="200" >
+                                       <script>
+                                         function storeVar(v) {
+                                          //var amount = el.getAttribute('value'); 
+                                          // OR: simply 
+                                          let amount = v;
+                                          console.log(amount);
+                                        } 
+                                       </script> 
+                                       
+                                      </div>
+                                      
+                                      <div class="column">
+                                        
+                                        <input type="image"  name = "HS2" value = "HS2" class="img-fluid rounded mb-5" src="/static/images/emojis(png)/H_W_2.png" alt="..."  width="200" height="200" />
+                                      </div>
+                                      <div class="column">
+                                        <input type="image"  name = "HS3" class="img-fluid rounded mb-5" src="/static/images/emojis(png)/H_W_3.png" alt="..."  width="200" height="200" />
+                                      </div>
+                                      </div>    
+
+                                      <div class="row">
+                                      <div class="column">
+                                        <input type="image"  name = "HS4" class="img-fluid rounded mb-5" src="/static/images/emojis(png)/H_M_1.png" alt="..."  width="200" height="200" />
+                                      </div>
+                                      <div class="column">
+                                        <input type="image"  name = "HS5" class="img-fluid rounded mb-5" src="/static/images/emojis(png)/H_M_2.png" alt="..."  width="200" height="200" />
+                                      </div>
+                                      <div class="column">
+                                        <input type="image"  name = "HS6" class="img-fluid rounded mb-5" src="/static/images/emojis(png)/H_M_3.png" alt="..."  width="200" height="200" /> 
+                                      </div>
+                                      </div>     
+
+                                      <div class="row">
+                                      <div class="column">
+                                        <input type="image"  name = "HS7" class="img-fluid rounded mb-5" src="/static/images/emojis(png)/H_S_1.png" alt="..."  width="200" height="200" />
+                                      </div>
+                                      <div class="column">
+                                        <input type="image"  name = "HS8" class="img-fluid rounded mb-5" src="/static/images/emojis(png)/H_S_2.png" alt="..."  width="200" height="200" />
+                                      </div>
+                                      <div class="column">
+                                        <input type="image"  name = "HS9" class="img-fluid rounded mb-5" src="/static/images/emojis(png)/H_S_3.png" alt="..."  width="200" height="200" />
+                                      </div>
+                                      </div>                                   
+                                    </form>
+
+                                   <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Click the approriate emoji that depicts your current emotion</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
